@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Form Design</title>
+        <style>
+<!-------------------Formating image---------->
+            * {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+<!-------------------End of Formating image---------->
+        </style>
+    </head>
+    <body>
+
+        <h2>Image Overlay Title</h2>
+    <div class="container">
+        <img src="image/John.png" alt="Avatar" class="image">
+        <div class="overlay">My Name is <br>Gale Robert<br>I love designing form</div>
+    </div>
+
+
+        <h2> This a form Design</h2>
+        <form action="" Method="POST">
+            <label for="First_name">First Name</label>
+            <input type="text" id="firstname" name="lastname" value="firstname" required/><br><br>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="lastname" name="Lastname" value="lastname" required/><br><br>
+            <input type="submit" name="submit" value="Login"/>
+        </form>
+    </body>
+</html>
