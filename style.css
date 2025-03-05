@@ -13,7 +13,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .card{
     width: 325px;
